@@ -4,8 +4,8 @@ Welcome to the **Germanisti** keyboard layout repository! The name "Germanisti"
 combines the Greek word "Γερμανία" (germania), meaning "German", with
 "επιστήμη" (episteme), meaning "science". This layout is designed specifically
 for the programming, mathematical, and scientific community, providing a
-comfortable and efficient typing experience while supporting German umlauts
-(diacritic) [^1].
+comfortable and efficient typing experience while supporting German [umlauts
+(diacritic)][umlaut].
 
 Born in the #Länd, to make the world an ε better!
 
@@ -30,7 +30,7 @@ Born in the #Länd, to make the world an ε better!
 
 - **Caps Lock Mapped to Escape** ⌨️: For an opinionated Vim experience, the Caps
   Lock key is mapped to Escape, allowing for transitions between modes as
-  (almost) intended by Bill Joy himself.
+  (almost) intended by [Bill Joy][vi] himself.
 
 ## Installation
 
@@ -67,3 +67,10 @@ To edit and test the Germanisti keyboard layout, you'll need to install
     ```bash
     kalamine watch germanisti.toml
     ```
+
+## License
+
+    This project is licensed under the MIT License.
+
+[umlaut]: https://en.wikipedia.org/wiki/Umlaut_(diacritic)
+[vi]: https://en.wikipedia.org/wiki/Vi_(text_editor)#:~:text=Joy%20used%20a%20Lear%20Siegler%20ADM-3A%20terminal
