@@ -9,6 +9,8 @@ comfortable and efficient typing experience while supporting German [umlauts
 
 Born in the #Länd, to make the world an ε better!
 
+![img](./germanisti.svg)
+
 ## Features
 
 - **Standard US Layout** 🖥️: The base layer is a standard US layout, ensuring a
