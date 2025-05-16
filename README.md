@@ -49,7 +49,7 @@ Born in the #Länd, to make the world an ε better!
 The [instructions for installation](./installation.rst) of keyboard layouts are
 copied from
 [OneDeadKey/kalamine](https://github.com/OneDeadKey/kalamine/tree/main) for
-convenience.
+convenience, which are distributed under MIT license.
 
 ## Install Kalamine for Layout Developers
 
