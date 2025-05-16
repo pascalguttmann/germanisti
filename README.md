@@ -1,6 +1,6 @@
 # Germanisti Keyboard Layout
 
-_Born in the #Länd, to make the world an ε better!_
+_Born in the [#Länd][laend], to make the world an ε better!_
 
 Welcome to the **Germanisti** keyboard layout repository! The name "Germanisti"
 combines the Greek word "Γερμανία" (germania), meaning "German", with
@@ -84,5 +84,6 @@ To edit and test the Germanisti keyboard layout, you'll need to install
 
 This project is licensed under the MIT License.
 
+[laend]: https://www.thelaend.de/en/
 [umlaut]: https://en.wikipedia.org/wiki/Umlaut_(diacritic)
 [vi]: https://en.wikipedia.org/wiki/Vi_(text_editor)#:~:text=Joy%20used%20a%20Lear%20Siegler%20ADM-3A%20terminal
