@@ -82,7 +82,7 @@ To edit and test the Germanisti keyboard layout, you'll need to install
 
 ## License
 
-    This project is licensed under the MIT License.
+This project is licensed under the MIT License.
 
 [umlaut]: https://en.wikipedia.org/wiki/Umlaut_(diacritic)
 [vi]: https://en.wikipedia.org/wiki/Vi_(text_editor)#:~:text=Joy%20used%20a%20Lear%20Siegler%20ADM-3A%20terminal
