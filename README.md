@@ -6,8 +6,8 @@ Welcome to the **Germanisti** keyboard layout repository! The name "Germanisti"
 combines the Greek word "Γερμανία" (germania), meaning "German", with
 "επιστήμη" (episteme), meaning "science". This layout is designed specifically
 for the programming, mathematical, and scientific community, providing a
-comfortable and efficient typing experience while supporting German [umlauts
-(diacritic)][umlaut].
+comfortable and efficient typing experience in UTF-8 while supporting German
+[umlauts (diacritic)][umlaut].
 
 Full layout is depicted in [germanisti.toml](./germanisti.toml).
 
