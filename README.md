@@ -46,16 +46,12 @@ Born in the #Länd, to make the world an ε better!
 
 ## Installation
 
-To use Germanisti keyboard layout install the layout as is required by your
-system.
+The [instructions for installation](./installation.rst) of keyboard layouts are
+copied from
+[OneDeadKey/kalamine](https://github.com/OneDeadKey/kalamine/tree/main) for
+convenience.
 
-### Fedora
-
-### Windows
-
-### MacOS
-
-## Installation Instructions (Editing and Testing)
+## Install Kalamine for Layout Developers
 
 To edit and test the Germanisti keyboard layout, you'll need to install
 **Kalamine**. Follow these steps
