@@ -1,5 +1,7 @@
 # Germanisti Keyboard Layout
 
+_Born in the #Länd, to make the world an ε better!_
+
 Welcome to the **Germanisti** keyboard layout repository! The name "Germanisti"
 combines the Greek word "Γερμανία" (germania), meaning "German", with
 "επιστήμη" (episteme), meaning "science". This layout is designed specifically
@@ -7,7 +9,7 @@ for the programming, mathematical, and scientific community, providing a
 comfortable and efficient typing experience while supporting German [umlauts
 (diacritic)][umlaut].
 
-Born in the #Länd, to make the world an ε better!
+Full layout is depicted in [germanisti.toml](./germanisti.toml).
 
 ![img](./dist/germanisti.svg)
 
@@ -30,8 +32,8 @@ Born in the #Länd, to make the world an ε better!
   can be neglected!)
 
 - **German Umlauts at Default Locations** 🇩🇪: German umlauts and sharp S (ß)
-  are placed at their default locations, providing a consistent experience for
-  users familiar with full German character support.
+  are placed at their default locations (with AltGr), providing a consistent
+  experience for users familiar with full German character support.
 
 - **Commonly Used Mathematical Symbols** ➕: Access frequently used
   mathematical symbols such as ≠ (unequal), ≈ (approx equal), ∝ (propto), ≤
