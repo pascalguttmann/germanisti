@@ -1,0 +1,194 @@
+# kalamine keyboard layout descriptor
+name        = "Germanisti"  # full layout name, displayed in the keyboard settings
+name8       = "Germanisti"         # short Windows filename: no spaces, no special chars
+locale      = "us"             # locale/language id
+variant     = "germanisti"         # layout variant id
+author      = "Pascal Guttmann"         # author name
+description = "US, no dead keys, altgr greek/german, caps-esc"
+url         = "https://github.com/pascalguttmann/germanisti"
+version     = "1.0.0"
+geometry    = "ANSI"
+
+full = '''
+┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
+│ ~   │ ! ₁ │ @ ₂ │ # ₃ │ $ ₄ │ % ₅ │ ^ ₆ │ & ₇ │ * ₈ │ ( ₉ │ ) ₀ │ _ √ │ + ≈ ┃          ┃
+│ ` ° │ 1 ¹ │ 2 ² │ 3 ³ │ 4 ⁴ │ 5 ⁵ │ 6 ⁶ │ 7 ⁷ │ 8 ⁸ │ 9 ⁹ │ 0 ⁰ │ - ß │ = ≠ ┃ ⌫        ┃
+┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┯━━━━━━━┩
+┃        ┃ Q ∅ │ W ∫ │ E € │ R Ρ │ T Τ │ Y Υ │ U Θ │ I Ι │ O Ο │ P Π │ { Ü │ }   │ |     │
+┃ ↹      ┃   ∀ │   ∞ │   ε │   ρ │   τ │   υ │   θ │   ι │   ο │   π │ [ ü │ ] ∝ │ \     │
+┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┷━━━━━━━┪
+┃         ┃ A Α │ S Σ │ D Δ │ F Φ │ G Γ │ H Η │ J Ξ │ K Κ │ L Λ │ : Ö │ " Ä ┃            ┃
+┃ ⇬       ┃   α │   σ │   δ │   φ │   γ │   η │   ξ │   κ │   λ │ ; ö │ ' ä ┃ ⏎          ┃
+┣━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━━┫
+┃            ┃ Z Ζ │ X Χ │ C Ψ │ V Ω │ B Β │ N Ν │ M Μ │ < ∪ │ > ∩ │ ? ∉ ┃               ┃
+┃ ⇧          ┃   ζ │   χ │   ψ │   ω │   β │   ν │   μ │ , ≤ │ . ≥ │ / ∈ ┃ ⇧             ┃
+┣━━━━━━━┳━━━━┻━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
+┃       ┃       ┃       ┃                                ┃       ┃       ┃       ┃       ┃
+┃ Ctrl  ┃ super ┃ Alt   ┃ ␣                              ┃ Alt   ┃ super ┃ menu  ┃ Ctrl  ┃
+┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
+'''
+
+
+
+# --------------------------------------------------------------------------------
+# Layers
+# --------------------------------------------------------------------------------
+#
+# ### base
+#
+# The `base` layer contains the base and shifted keys:
+#
+#                    +-----+
+#     shift -------> | ?   |
+#     base --------> | /   |
+#                    +-----+
+#
+# When the base and shift keys correspond to the same character, you may only
+# specify the uppercase char:
+#
+#                    +-----+
+#     shift -------> | A   |
+#     (base = a) --> |     |
+#                    +-----+
+#
+#
+# ### altgr
+#
+# The `altgr` layer contains the altgr and shift+altgr symbols:
+#
+#                    +-----+
+#                    |     | <----- (altgr+shift+key is undefined)
+#                    |   { | <----- altgr+key = {
+#                    +-----+
+#
+#
+# ### full
+#
+# The `full` view lets you specify the `base` and `altgr` levels together:
+#
+#                    +-----+
+#     shift -------> | A   | <----- (altgr+shift+key is undefined)
+#     (base = a) --> |   { | <----- altgr+key = {
+#                    +-----+
+
+
+# --------------------------------------------------------------------------------
+# Dead Keys
+# --------------------------------------------------------------------------------
+#
+# ### Usage
+#
+# Dead keys are preceded by a `*` sign. They can be used in the `base` layer:
+#
+#                    +-----+
+#     shift -------> |*"   |  = dead diaeresis
+#     base --------> |*´   |  = dead acute accent
+#                    +-----+
+#
+# … as well as in the `altgr` layer:
+#
+#                    +-----+
+#                    |  *" | <----- altgr+shift+key = dead diaeresis
+#                    |  *´ | <----- altgr+key       = dead acute accent
+#                    +-----+
+#
+# … and combined in the `full` layer:
+#
+#                     +-----+
+#   shift+key = A --> | A*" | <----- altgr+shift+key = dead diaeresis
+#         key = a --> | a*´ | <----- altgr+key       = dead acute accent
+#                     +-----+
+#
+#
+# ### Standard Dead Keys
+#
+# The following dead keys are supported, and their behavior cannot be customized:
+#
+#     id  XKB name          base -> accented chars
+#     ----------------------------------------------------------------------------
+#     *`  grave             AaEeIiNnOoUuWwYyЕеИи
+#                        -> ÀàÈèÌìǸǹÒòÙùẀẁỲỳЀѐЍѝ
+#     *‟  doublegrave       AaEeIiOoRrUuѴѴ
+#                        -> ȀȁȄȅȈȉȌȍȐȑȔȕѶѷ
+#     *´  acute             AaCcEeGgIiKkLlMmNnOoPpRrSsUuWwYyZzΑαΕεΗηΙιΟοΥυΩωГгКк
+#                        -> ÁáĆćÉéǴǵÍíḰḱĹĺḾḿŃńÓóṔṕŔŕŚśÚúẂẃÝýŹźΆάΈέΉήΊίΌόΎύΏώЃѓЌќ
+#     *”  doubleacute       OoUuУу
+#                        -> ŐőŰűӲӳ
+#     *^  circumflex        AaCcEeGgHhIiJjOoSsUuWwYyZz0123456789()+-=
+#                        -> ÂâĈĉÊêĜĝĤĥÎîĴĵÔôŜŝÛûŴŵŶŷẐẑ⁰¹²³⁴⁵⁶⁷⁸⁹⁽⁾⁺⁻⁼
+#     *ˇ  caron             AaCcDdEeGgHhIiKkLlNnOoRrSsTtUuZzƷʒ0123456789()+-=
+#                        -> ǍǎČčĎďĚěǦǧȞȟǏǐǨǩĽľŇňǑǒŘřŠšŤťǓǔŽžǮǯ₀₁₂₃₄₅₆₇₈₉₍₎₊₋₌
+#     *˘  breve             AaEeGgIiOoUuΑαΙιΥυАаЕеЖжИиУу
+#                        -> ĂăĔĕĞğĬĭŎŏŬŭᾸᾰῘῐῨῠӐӑӖӗӁӂЙйЎў
+#     *⁻  invertedbreve     AaEeIiOoUuRr
+#                        -> ȂȃȆȇȊȋȎȏȖȗȒȓ
+#     *~  tilde             AaEeIiNnOoUuVvYy<>=
+#                        -> ÃãẼẽĨĩÑñÕõŨũṼṽỸỹ≲≳≃
+#     *¯  macron            AaÆæEeGgIiOoUuYy
+#                        -> ĀāǢǣĒēḠḡĪīŌōŪūȲȳ
+#     *¨  diaeresis         AaEeHhIiOotUuWwXxYyΙιΥυАаЕеӘәЖжЗзИиІіОоӨөУуЧчЫыЭэ
+#                        -> ÄäËëḦḧÏïÖöẗÜüẄẅẌẍŸÿΪϊΫϋӒӓЁёӚӛӜӝӞӟӤӥЇїӦӧӪӫӰӱӴӵӸӹӬӭ
+#     *˚  abovering         AaUuwy
+#                        -> ÅåŮůẘẙ
+#     *¸  cedilla           CcDdEeGgHhKkLlNnRrSsTt
+#                        -> ÇçḐḑȨȩĢģḨḩĶķĻļŅņŖŗŞşŢţ
+#     *,  belowcomma        SsTt
+#                        -> ȘșȚț
+#     *˛  ogonek            AaEeIiOoUu
+#                        -> ĄąĘęĮįǪǫŲų
+#     */  stroke            AaBbCcDdEeGgHhIiJjLlOoPpRrTtUuYyZz<≤≥>=
+#                        -> ȺⱥɃƀȻȼĐđɆɇǤǥĦħƗɨɈɉŁłØøⱣᵽɌɍŦŧɄʉɎɏƵƶ≮≰≱≯≠
+#     *˙  abovedot          AaBbCcDdEeFfGgHhIijLlMmNnOoPpRrSsTtWwXxYyZz
+#                        -> ȦȧḂḃĊċḊḋĖėḞḟĠġḢḣİıȷĿŀṀṁṄṅȮȯṖṗṘṙṠṡṪṫẆẇẊẋẎẏŻż
+#     *.  belowdot          AaBbDdEeHhIiKkLlMmNnOoRrSsTtUuVvWwYyZz
+#                        -> ẠạḄḅḌḍẸẹḤḥỊịḲḳḶḷṂṃṆṇỌọṚṛṢṣṬṭỤụṾṿẈẉỴỵẒẓ
+#     *µ  greek             AaBbDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuWwXxYyZz
+#                        -> ΑαΒβΔδΕεΦφΓγΗηΙιΘθΚκΛλΜμΝνΟοΠπΧχΡρΣσΤτΥυΩωΞξΨψΖζ
+#     *¤  currency          AaBbÇCçcDdEeFfGgHhIiKkLlMmNnOoPpRrSsTtþÞUuWwYy
+#                        -> ₳؋₱฿₵₡₵¢₯₫₠€₣ƒ₲₲₴₴៛﷼₭₭₤£ℳ₥₦₦૱௹₧₰₨₢$₪₮৳৲৲圓元₩₩円¥
+#
+# ### Custom Dead Key
+#
+# There is one dead key (1dk), noted `**`, that can be customized by specifying
+# how it modifies each character in the `base` layer:
+#
+#                    +-----+
+#     shift -------> | ? ¿ | <----- 1dk, shift+key
+#     base --------> | / ÷ | <----- 1dk, key
+#                    +-----+
+#
+# When the base and shift keys correspond to the same accented character, you may
+# only specify the lowercase accented char in the `base` layer:
+#
+#                    +-----+
+#     shift -------> | A   | <----- (1dk, shift+key = À)
+#     (base = a) --> |   à | <----- 1dk, key = à
+#                    +-----+
+#
+# You may also chain dead keys by specifying a dead key in the `1dk` layer:
+#
+#                    +-----+
+#     shift -------> | G   |
+#     (base = g) --> |  *µ | <----- 1dk, key = dead Greek
+#                    +-----+
+#
+# **Warning:** chained dead keys are not supported by MSKLC, and KbdEdit will be
+# required to build a Windows driver for such a keyboard layout.
+
+
+# --------------------------------------------------------------------------------
+# Space Bar
+# --------------------------------------------------------------------------------
+#
+# Kalamine descriptor files have an optional section to define specific behaviors
+# of the space bar in non-base layers:
+#
+#     [spacebar]
+#     shift       = "\u202f"  # NARROW NO-BREAK SPACE
+#     altgr       = "\u0020"  # SPACE
+#     altgr_shift = "\u00a0"  # NO-BREAK SPACE
+#     1dk         = "\u2019"  # RIGHT SINGLE QUOTATION MARK
+#     1dk_shift   = "\u2019"  # RIGHT SINGLE QUOTATION MARK
+#
+# Kalamine doesn’t support non-space chars on the `base` layer for the space bar.
+# Space characters outside of the space bar are not supported either.

@@ -24,9 +24,21 @@ Born in the #Länd, to make the world an ε better!
   alphabet. This is especially useful when LaTeX or other typesetting tools are
   not available.
 
-- **German Umlauts at Default Locations** 🇩🇪: German umlauts are placed at
-  their default locations, providing a consistent experience for users familiar
-  with German layouts.
+- **Currency Support** 💶: The Euro symbol (€) is included. (Even a big epsilon 
+  can be neglected!)
+
+- **German Umlauts at Default Locations** 🇩🇪: German umlauts and sharp S (ß)
+  are placed at their default locations, providing a consistent experience for
+  users familiar with full German character support.
+
+- **Commonly Used Mathematical Symbols** ➕: Access frequently used
+  mathematical symbols such as ≠ (unequal), ≈ (approx equal), ∝ (propto), ≤
+  (less equal), ≥ (greater equal), ∪ (union), ∩ (intersection), ∈ (element of), ∉
+  (not element of), ∞ (infinity), ∀ (for all), ∅ (empty set), and ∫ (integral).
+
+- **Number Super and Subscript** ²³: Easily type super and subscript
+  numbers for mathematical powers and indices, including the radical symbol
+  (√).
 
 - **Caps Lock Mapped to Escape** ⌨️: For an opinionated Vim experience, the Caps
   Lock key is mapped to Escape, allowing for transitions between modes as
