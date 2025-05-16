@@ -9,7 +9,7 @@ comfortable and efficient typing experience while supporting German [umlauts
 
 Born in the #Länd, to make the world an ε better!
 
-![img](./germanisti.svg)
+![img](./dist/germanisti.svg)
 
 ## Features
 
