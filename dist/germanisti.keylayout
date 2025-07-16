@@ -131,7 +131,7 @@
       <key code="10"  output="&#x0010;" />
 
       <!-- Space bar -->
-      <key code="49"  action="spce_x0020" />
+      <key code="49"  output=" " />
 
       <!-- Other keys -->
       <key code="36"  output="&#x000D;" />
@@ -258,7 +258,7 @@
       <key code="10"  output="&#x0010;" />
 
       <!-- Space bar -->
-      <key code="49"  action="spce_x0020" />
+      <key code="49"  output=" " />
 
       <!-- Other keys -->
       <key code="36"  output="&#x000D;" />
@@ -385,7 +385,7 @@
       <key code="10"  output="&#x0010;" />
 
       <!-- Space bar -->
-      <key code="49"  action="spce_x0020" />
+      <key code="49"  output=" " />
 
       <!-- Other keys -->
       <key code="36"  output="&#x000D;" />
@@ -512,7 +512,7 @@
       <key code="10"  output="&#x0010;" />
 
       <!-- Space bar -->
-      <key code="49"  action="spce_x0020" />
+      <key code="49"  output=" " />
 
       <!-- Other keys -->
       <key code="36"  output="&#x000D;" />
@@ -639,7 +639,7 @@
       <key code="10"  output="&#x0010;" />
 
       <!-- Space bar -->
-      <key code="49"  action="spce_x0020" />
+      <key code="49"  output=" " />
 
       <!-- Other keys -->
       <key code="36"  output="&#x000D;" />
@@ -719,15 +719,6 @@
     <!-- Pinky keys -->
 
     <!-- Space bar -->
-    <action id="spce_x0020">
-      <when state="none"       output="&#x0020;" />
-    </action>
-    <action id="spce_x00a0">
-      <when state="none"       output="&#x00a0;" />
-    </action>
-    <action id="spce_x202f">
-      <when state="none"       output="&#x202f;" />
-    </action>
   </actions>
 
   <terminators>
