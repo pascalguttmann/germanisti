@@ -50,8 +50,9 @@ Full layout is depicted in [germanisti.toml](./germanisti.toml).
 
 ## Installation
 
-The [instructions for installation](./installation.rst) of keyboard layouts are
-copied from
+The [instructions for
+installation](./installation.rst#using-distributable-layouts) of keyboard
+layouts are copied from
 [OneDeadKey/kalamine](https://github.com/OneDeadKey/kalamine/tree/main) for
 convenience, which are distributed under MIT license.
 
